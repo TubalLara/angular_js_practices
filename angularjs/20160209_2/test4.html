@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body ng-app="myApp4" ng-controller="controller as vm">
+
+<p ng-repeat="obj in vm.soldiers track by $index" ng-init="$index">
+	{{obj.name}} {{obj.destiny}}
+</p>
+
+
+
+<script type="text/javascript" src="angular.min.js"></script>
+<script type="text/javascript" src="test4.js"></script>
+</body>
+</html>

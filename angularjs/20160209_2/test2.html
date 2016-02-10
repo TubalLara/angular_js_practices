@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body ng-app ng-init="cities=[];">
+
+	<input type="text" placeholder="Type the name of a city" 
+	ng-model="city"/>
+	<input type="button" value="Add city" ng-click="cities.push(city); 
+	city='';"/>
+	
+	<p ng-repeat="obj in cities track by $index">
+	<!-- what track by $index is doing is adding a index to every element 
+	so it doesn´t get errors with same name cities -->
+		{{obj}}
+	</p>
+
+<script type="text/javascript" src="angular.min.js"></script>
+<script type="text/javascript" src="test2.js"></script>
+</body>
+</html>

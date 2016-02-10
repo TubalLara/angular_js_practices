@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+	.yes {
+		color:blue;
+	}
+	.no {
+		color:red;
+	}
+</style>
+</head>
+<body ng-app="myApp6" ng-controller="controller as vm">
+
+<p ng-class="vm.true">My name is Tubal and I am the coolest guy ever</p>
+
+True? <input type="checkbox" ng-model="vm.true" ng-true-value="'yes'" 
+ng-false-value="'no'">
+
+<script type="text/javascript" src="angular.min.js"></script>
+<script type="text/javascript" src="test6.js"></script>
+</body>
+</html>

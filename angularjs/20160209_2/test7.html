@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+	.positive {
+		color:blue;
+	}
+	.negative {
+		color:red;
+	}
+	.negative {
+		color: green;
+	}
+</style>
+</head>
+<body ng-app="myApp7" ng-controller="controller as vm">
+
+<p ng-class="{positive:vm.value>32, negative:vm.value<32, equal:vm.value=32}">My name is Tubal</p>
+
+How old I am?
+<input type="number" placeholder="Type a number" ng-model="vm.age">
+<input type="button" value="Are you right?" ng-click="vm.checkAge()">
+
+<script type="text/javascript" src="angular.min.js"></script>
+<script type="text/javascript" src="test7.js"></script>
+</body>
+</html>

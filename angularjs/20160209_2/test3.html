@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body ng-app="myApp3" ng-controller="controller as vm">
+
+	<input type="text" placeholder="Type a color" 
+	ng-model="vm.color"/>
+	<input type="button" value="Add color" ng-click="vm.loadColor()"/>
+	
+	<p ng-repeat="obj in vm.colors track by $index" ng-init="$index">
+	<!-- what track by $index is doing is adding a index to every element 
+	so it doesn´t get errors with same name cities -->
+		{{$index}} {{obj}}
+	</p>
+
+
+<script type="text/javascript" src="angular.min.js"></script>
+<script type="text/javascript" src="test3.js"></script>
+</body>
+</html>

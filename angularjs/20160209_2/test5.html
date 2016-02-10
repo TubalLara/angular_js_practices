@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+	.format1 {
+		color: green;
+	}
+	.format2 {
+		color:blue;
+	}
+	.format3 {
+		color:orange;
+	}
+</style>
+</head>
+<body ng-app="myApp5" ng-controller="controller as vm">
+	
+	<p ng-class="vm.class">I am tubal and I am the most handsome</p>
+	<select ng-model="vm.class">
+		<option value="format1"> Format1 </option>
+		<option value="format2"> Format2 </option>
+		<option value="format3"> Format3 </option>
+	</select>
+
+
+<script type="text/javascript" src="angular.min.js"></script>
+<script type="text/javascript" src="test5.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body ng-app="miApp4">
+<div ng-controller="control1 as c1">
+	<div ng-controller="control2 as c2">
+		<div ng-controller="control3 as c3">
+			<div ng-controller="control4 as c4">
+				{{c1.nombre}} {{c2.nombre}} quiere 
+				mucho a {{c3.nombre}} {{c4.nombre}}
+			</div>
+		</div>
+		
+	</div>
+
+</div>
+
+
+<script type="text/javascript" src="angular.min.js"></script>
+<script type="text/javascript" src="prueba4.js"></script>
+</body>
+</html>

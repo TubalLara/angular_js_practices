@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+Nombre: <input type="text" ng-model="lolo"/></br>
+Hello world! </br> I am {{lolo}} the most {{popo}} 
+<select ng-model="popo">
+	<option value="handsome"> Handsome </option>
+	<option value="ugly">Ugly </option>
+</select>
+in the whole classroom<br/></br>
+<input type="button" value="show change" ng-click="lolo='Brad Pitt'"/>
+</br></br>
+
+<input type="button" value="Clean values" ng-click="lolo=' '; popo=' '"/>
+
+<!-- <script type="text/javascript" src="angular.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+</body>
+</html>
