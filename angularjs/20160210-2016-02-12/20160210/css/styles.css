@@ -1,0 +1,28 @@
+@CHARSET "ISO-8859-1";
+
+.spring {
+	color: green;
+}
+.summer {
+	color: yellow;
+}
+.autumn {
+	color: orange;
+}
+.winter {
+	color: white;
+}
+
+.big {
+	font-size: 36px;
+}
+.small {
+	font-size: 14px;
+}
+
+.right {
+	color: green;
+}
+.wrong {
+	color: red;
+}

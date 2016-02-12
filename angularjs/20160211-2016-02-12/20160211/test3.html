@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body ng-app="miApp3" ng-controller="controller3">
+
+<span ng-show="ver">{{nombre}}</span>
+
+<input ng-show="!ver" type="text" ng-model="nombre" placeholder="nombre"/>
+
+<input type="button" value="Editar" ng-click="editar()"/>
+<input ng-show="!ver" type="button" value="Guardar" ng-click="guardar()"/>
+
+
+<script type="text/javascript" src="angular.min.js"></script>
+<script type="text/javascript" src="js/test3.js"></script>
+</body>
+</html>

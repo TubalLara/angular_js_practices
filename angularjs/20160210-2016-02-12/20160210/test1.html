@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link type="text/css" href="css/styles.css" rel="stylesheet"></link>
+</head>
+<body ng-app="styles1" ng-controller="control">
+
+<input type="radio" name="season" value="spring" ng-model="season"/>Spring
+<input type="radio" name="season" value="summer" ng-model="season"/>Summer
+<input type="radio" name="season" value="autumn" ng-model="season"/>Autumn
+<input type="radio" name="season" value="winter" ng-model="season"/>Winter
+<div ng-class="season">First test for ng-class</div>
+<hr/>
+
+<input type="checkbox" ng-model="size" ng-true-value="'big'" ng-false-value="'small'">Check for bigger size
+<div ng-class="size">Second test for ng-class</div>
+<hr/>
+
+<input type="text" placeholder="Type a number" ng-model="leftNumber"/> >
+<input type="text" placeholder="Type a number" ng-model="rightNumber"/>
+<div ng-class="{right:leftInt>rightInt, wrong:leftInt<=rightInt}">Result</div>
+<hr/>
+
+Size: 
+<select ng-model="textSize">
+	<option value="big">Big</option>
+	<option value="small">Small</option>
+</select>
+Color: 
+<select ng-model="textColor">
+	<option value="right">Green</option>
+	<option value="wrong">Red</option>
+</select>
+
+<input type="button" ng-click="loadChanges()"/>
+
+
+<div ng-class="selection"> Fourth test</div>
+
+<script type="text/javascript" src="angular.min.js"></script>
+<script type="text/javascript" src="js/test1.js"></script>
+</body>
+</html>

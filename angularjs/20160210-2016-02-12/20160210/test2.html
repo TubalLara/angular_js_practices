@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body ng-app="JSON2" ng-controller="controller">
+<table border="2">
+<tr><th>Name</th><th>Price</th><th>Type</th></tr>
+<tr><th>Order by:</th><th><select ng-model="data">
+	<option value="name">Name</option>
+	<option value="price">Price</option>
+	<option value="type">Type</option>
+</select></th></tr>
+	<tr ng-repeat="element in elements| orderBy:data:false">
+		<td>{{$index+1}}</td>
+		<td>{{element.name}}</td>
+		<td>{{element.price||currency}}</td>
+		<td>{{element.type}}</td>
+		<td><input type="button" value="Erase - {{element.name}}" ng-click="erase($index)"/></td>
+	</tr>
+</table>
+</hr>
+
+<select ng-model="datType">
+	<option value="name">Name</option>
+	<option value="price">Price</option>
+	<option value="type">Type</option>
+</select>
+<p ng-repeat="element in elements|filter:datType">
+	Name {{element.name}}
+	Price {{element.price}}
+	Type {{element.type}}
+</p>
+
+
+Name:<input type="text" ng-model="name"/><br/>
+Price:<input type="text" ng-model="price"/><br/>
+Type:<input type="text" ng-model="type"/><br/>
+
+<input type="button" ng-click="add()"/><br/>
+
+<script type="text/javascript" src="angular.min.js"></script>
+<script type="text/javascript" src="js/test2.js"></script>
+</body>
+</html>

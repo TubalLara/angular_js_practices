@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body ng-app="miApp2" ng-controller="controller">
+
+<input type="text" placeholder="Introduce un número" ng-model="valor"/>
+
+<p ng-show="result(valor)">Es par</p>
+<p ng-hide="result(valor)">Es impar</p>
+{{result()}}
+{{valor}}
+
+<script type="text/javascript" src="angular.min.js"></script>
+<script type="text/javascript" src="js/test2.js"></script>
+</body>
+</html>
